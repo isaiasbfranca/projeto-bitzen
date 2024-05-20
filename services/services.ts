@@ -47,7 +47,7 @@ export async function PetListService(search: string) {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': `Bearer ${"606|spYRlAwTUlxfDqfzP3hUqx3Qu8qAHPjL64wAIKaf"}`
+            'Authorization': `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`
         },
         
     })
@@ -64,7 +64,7 @@ export async function DeletePet(id: number) {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': `Bearer ${"606|spYRlAwTUlxfDqfzP3hUqx3Qu8qAHPjL64wAIKaf"}`
+            'Authorization': `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`
         },
     })
 
@@ -80,7 +80,7 @@ export async function DetailsPet(id: number) {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': `Bearer ${"606|spYRlAwTUlxfDqfzP3hUqx3Qu8qAHPjL64wAIKaf"}`
+            'Authorization': `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`
         },
     })
 
@@ -96,7 +96,7 @@ export async function UpdatePet(id: number, formData: any) {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': `Bearer ${"606|spYRlAwTUlxfDqfzP3hUqx3Qu8qAHPjL64wAIKaf"}`
+            'Authorization': `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`
         },
         body: JSON.stringify(formData)
     })
@@ -113,7 +113,7 @@ export async function IncludePetService(formData: any) {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': `Bearer ${"606|spYRlAwTUlxfDqfzP3hUqx3Qu8qAHPjL64wAIKaf"}`,
+            'Authorization': `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`,
         },
         body: JSON.stringify(formData)
     })
@@ -130,7 +130,7 @@ export async function findUser() {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': `Bearer ${"606|spYRlAwTUlxfDqfzP3hUqx3Qu8qAHPjL64wAIKaf"}`,
+            'Authorization': `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`,
         },
     })
 
